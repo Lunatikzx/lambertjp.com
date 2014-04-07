@@ -49,7 +49,7 @@
                     </div>
                     <div class="centered" >
                         <h1 class="fadeInUp animated">JEAN-PHILIPPE LAMBERT</h1> 
-                        <p class="fadeInUp animated">D&eacute;veloppeur Web / Javascript</p>
+                        <p class="fadeInUp animated">D&eacute;veloppeur Web / Intégrateur web / Javascript</p>
                     </div>
                 </a>
             </div>
