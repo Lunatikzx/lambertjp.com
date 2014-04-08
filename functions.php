@@ -1,6 +1,7 @@
 <?php
 
 add_action( 'init', 'register_section_type' );
+add_action( 'init', 'register_portfolio_type' );
 
 /**
 * Registers a new post type
@@ -54,4 +55,47 @@ function register_section_type() {
     register_post_type( 'sections', $args );
 }
 
+function register_portfolio_type() {
+
+    $labels = array(
+        'name'                => "Réalisations",
+        'singular_name'       => "Réalisation",
+        'add_new'             => "Ajouter une Réalisation à la page principale",
+        'add_new_item'        => "Ajouter une nouvelle Réalisation",
+        'edit_item'           => "Éditer la Réalisation",
+        'new_item'            => "Nouvelle Réalisation",
+        'view_item'           => "Voir la Réalisation",
+        'search_items'        => "Rechercher la nouvelle Réalisation",
+        'not_found'           => "Aucune Réalisation trouvee",
+        'not_found_in_trash'  => "Aucune Réalisation trouvee dans la poubelle",
+        'menu_name'           => "Portfolio",
+    );
+
+    $args = array(
+        'labels'              => $labels,
+        'hierarchical'        => false,
+        'description'         => 'les items du portfolio',
+        'taxonomies'          => array(),
+        'public'              => true,
+        'show_ui'             => true,
+        'show_in_menu'        => true,
+        'show_in_admin_bar'   => true,
+        'menu_position'       => null,
+        'menu_icon'           => null,
+        'show_in_nav_menus'   => true,
+        'publicly_queryable'  => true,
+        'exclude_from_search' => false,
+        'has_archive'         => true,
+        'query_var'           => true,
+        'can_export'          => true,
+        'rewrite'             => true,
+        'capability_type'     => 'post',
+        'supports'            => array(
+            'title', 'editor', 'author', 'thumbnail',
+            'page-attributes', 'post-formats'
+            )
+    );
+
+    register_post_type( 'portfolio', $args );
+}
 ?>
