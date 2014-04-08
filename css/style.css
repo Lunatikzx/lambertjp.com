@@ -112,14 +112,20 @@ body {
   padding: 10px 10px 0 0;
   margin: 0 0 10px 0;
 }
+.main_content article .header-img {
+  padding: 0;
+  margin-bottom: 20px;
+  max-height: 200px;
+}
+.main_content article .header-img img {
+  margin: 0 auto;
+  display: block;
+  max-height: 200px;
+}
 .main_content article .aside {
   font-size: 0.8em;
   padding: 10px  10px 0 10px;
   border-left: 1px dashed #ff7d00;
-}
-.main_content article img {
-  padding: 10px 0;
-  margin: 0 auto;
 }
 .main_content h1 {
   font-family: 'Roboto', sans-serif;
@@ -161,6 +167,9 @@ body {
   font-weight: 100;
   color: #cfcfcf;
   box-shadow: 0 2px 1px 0 #0c161c;
+}
+.main_nav ul .active {
+  background-color: #182732;
 }
 .main_nav ul li {
   color: #cfcfcf;

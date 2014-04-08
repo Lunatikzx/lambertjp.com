@@ -18,7 +18,6 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css"/>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css"/>
@@ -26,8 +25,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,700,300,600,400' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css">
-    <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/responsive-nav.js"></script>
+
     <title>Jean-Philippe Lambert - Développeur Web</title>
     <!--[if lt IE 9]>
         <script>
@@ -41,7 +39,7 @@
     <![endif]-->
     <?php wp_head(); ?>
 </head>
-<body>
+<body data-spy="scroll" data-target=".main_nav">
     <header id="top">
         <div class="title container-fluid">
             <div class="row">
@@ -59,9 +57,9 @@
     </header>
     <nav class="nav-collapsed main_nav ">
         <ul class="nav nav-justified">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#qui">Qui suis-je?</a></li>
+            <li><a href="#">Ma formation</a></li>
+            <li><a href="#">Mes expériences</a></li>
+            <li><a href="#">Mon portfolio</a></li>
         </ul>
     </nav> 

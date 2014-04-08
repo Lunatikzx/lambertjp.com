@@ -10,7 +10,8 @@
 /* Custom post query */
 $args = array(
     "post_per_page" => "-1",
-    "post_type" => "sections"
+    "post_type" => "sections",
+    "order" => "ASC"
     );
 $my_sections = new WP_Query($args);
 $right = false;
@@ -19,9 +20,8 @@ get_header(); ?>
  <section class="main_content">
         <?php
             while( $my_sections->have_posts() ) : $my_sections->the_post();
-
         ?>
-        <div class="contentwrapper <?php if ($right) { echo "right"; } ?>">
+        <div id="<?php the_field("id");?>" class="contentwrapper <?php if ($right) { echo "right"; } ?>">
             <div class="container">
             <header>
                 <h1 class="article_title animated fadeInRight"><?php the_title(); ?></h1>
@@ -29,7 +29,7 @@ get_header(); ?>
                 <article class="main_article">
                     <h2><span><?php the_field("subtitle"); ?></span></h2>
                     <div>
-                        <p><?php the_content(); ?></p>
+                        <?php the_content(); ?>
                     </div>
                 </article>
             </div>
