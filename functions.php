@@ -1,6 +1,7 @@
 <?php
 
 add_action( 'init', 'register_section_type' );
+
 /**
 * Registers a new post type
 * @uses $wp_post_types Inserts new post type object into the list
@@ -12,7 +13,7 @@ add_action( 'init', 'register_section_type' );
 function register_section_type() {
 
     $labels = array(
-        'name'                => "Page principale",
+        'name'                => "Sections",
         'singular_name'       => "Section",
         'add_new'             => "Ajouter une section à la page principale",
         'add_new_item'        => "Ajouter une nouvelle section",
@@ -50,7 +51,7 @@ function register_section_type() {
             )
     );
 
-    register_post_type( 'slug', $args );
+    register_post_type( 'sections', $args );
 }
 
 ?>
