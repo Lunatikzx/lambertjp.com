@@ -16,7 +16,7 @@
             <p class="tel">+1 581.983.1817</p>
             <p class="social">
                 <a href="http://www.linkedin.com/pub/jean-philippe-lambert/16/556/919" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-                <a href="#" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                <a href="https://github.com/Lunatikzx" target="_blank"><i class="fa fa-github fa-3x"></i></a>
             </p>
         </section>
         <section class="col-sm-3"></section>
