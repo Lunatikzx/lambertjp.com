@@ -21,6 +21,7 @@ body {
   height: 100%;
 }
 body {
+  position: relative;
   background-color: #ffffff;
   color: #0c161c;
   -webkit-animation: fadein 2s;
@@ -80,6 +81,10 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+.affix {
+  position: fixed;
+  top: 10px;
+}
 /* Article */
 .main_content div {
   padding: 0 0 0 20px;
@@ -138,7 +143,6 @@ body {
 .main_content .contentwrapper.right {
   background: #0c161c url(../images/profil-blue.jpg) -120px -200px no-repeat fixed;
   color: #cfcfcf;
-  text-align: right;
 }
 .main_content .contentwrapper.right h1 {
   color: #56ff00;
