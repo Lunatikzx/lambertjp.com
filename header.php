@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/responsive-nav.css"/>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800,700,300,600,400' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700" rel="stylesheet" type="text/css">
 
     <title>Jean-Philippe Lambert - Développeur Web</title>
@@ -40,6 +39,14 @@
     <?php wp_head(); ?>
 </head>
 <body data-spy="scroll" data-target=".main_nav">
+    <nav class="nav-collapsed main_nav ">
+        <ul class="nav nav-justified">
+            <li><a href="#qui">Qui suis-je?</a></li>
+            <li><a href="#">Ma formation</a></li>
+            <li><a href="#">Mes expériences</a></li>
+            <li><a href="#">Mon portfolio</a></li>
+        </ul>
+    </nav> 
     <header id="top">
         <div class="title container-fluid">
             <div class="row">
@@ -55,11 +62,3 @@
             </div>
         </div>
     </header>
-    <nav class="nav-collapsed main_nav ">
-        <ul class="nav nav-justified">
-            <li><a href="#qui">Qui suis-je?</a></li>
-            <li><a href="#">Ma formation</a></li>
-            <li><a href="#">Mes expériences</a></li>
-            <li><a href="#">Mon portfolio</a></li>
-        </ul>
-    </nav> 

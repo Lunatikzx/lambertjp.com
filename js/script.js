@@ -1,7 +1,7 @@
 var nav = 
     responsiveNav(".nav-collapsed", { // Selector
     animate: true, // Boolean: Use CSS3 transitions, true or false
-    transition: 400, // Integer: Speed of the transition, in milliseconds
+    transition: 100, // Integer: Speed of the transition, in milliseconds
     label: "<i class='fa fa-bars fa-2x'></i>", // String: Label for the navigation toggle
     insert: "before", // String: Insert the toggle before or after the navigation
     customToggle: "", // Selector: Specify the ID of a custom toggle

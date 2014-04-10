@@ -10,7 +10,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .h1 {
   font-size: 3em;
@@ -21,7 +21,6 @@ body {
   height: 100%;
 }
 body {
-  position: relative;
   background-color: #ffffff;
   color: #0c161c;
   -webkit-animation: fadein 2s;
@@ -81,17 +80,13 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-.affix {
-  position: fixed;
-  top: 10px;
-}
 /* Article */
 .main_content div {
   padding: 0 0 0 20px;
 }
 .main_content article {
   text-align: justify;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 10px 0 25px 0;
 }
 .main_content article h2 {
@@ -166,6 +161,8 @@ body {
   box-shadow: 0 2px 1px 0 #0c161c;
 }
 .main_nav {
+  position: fixed;
+  top: 0;
   background-color: #3b434d;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
