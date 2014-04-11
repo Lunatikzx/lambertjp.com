@@ -26,6 +26,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/responsive-nav.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/smoothscroll.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 <?php wp_footer(); ?>
 </body>

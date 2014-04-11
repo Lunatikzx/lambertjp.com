@@ -11,3 +11,9 @@ var nav =
     navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
     jsClass: "js", // String: 'JS enabled' class which is added to  element
 });
+    
+$('ul.nav a').click(function(event) {
+    event.preventDefault();
+    var link = this;
+    $.smoothScroll({scrollTarget: link.hash});
+});

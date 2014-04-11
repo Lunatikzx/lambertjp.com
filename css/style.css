@@ -61,10 +61,27 @@ body {
 }
 /* Header */
 #top {
-  background: #182732 url(../images/profil.jpg) 0 0 no-repeat fixed;
   color: #ffffff;
   padding: 15px 0;
   text-shadow: 1px 1px 1px #0c161c;
+}
+@media screen and (min-width: 768px) {
+  #top {
+    background: #182732 url(../images/profil.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  #top {
+    background: #182732 url(../images/profil-sm.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 #top:hover {
   text-decoration: none;
@@ -105,8 +122,25 @@ body {
   width: 100%;
 }
 .main_content article .profil {
-  background: #182732 url(../images/profil.jpg) 0 0 no-repeat fixed;
   box-shadow: 2px 2px 2px 0 #0c161c inset;
+}
+@media screen and (min-width: 768px) {
+  .main_content article .profil {
+    background: #182732 url(../images/profil.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_content article .profil {
+    background: #182732 url(../images/profil-sm.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 .main_content article div {
   padding: 10px 10px 0 0;
@@ -136,8 +170,25 @@ body {
   margin-right: 10px;
 }
 .main_content .contentwrapper.right {
-  background: #0c161c url(../images/profil-blue.jpg) -120px -200px no-repeat fixed;
   color: #cfcfcf;
+}
+@media screen and (min-width: 768px) {
+  .main_content .contentwrapper.right {
+    background: #0c161c url(../images/profil-blue.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main_content .contentwrapper.right {
+    background: #0c161c url(../images/profil-blue-sm.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 .main_content .contentwrapper.right h1 {
   color: #56ff00;
